@@ -18,7 +18,6 @@ export const Contact = () => {
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
       setFormDetails({
@@ -77,12 +76,7 @@ export const Contact = () => {
                       <textarea rows="6" value={formDetails.message} placeholder="Message" name="message" required onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                       <button type="submit"><span>{buttonText}</span></button>
                     </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        {/* <p className={status.success === false ? "danger" : "success"}style={{color:"white"}} >{status.message}</p> */}
-                      </Col>
-                    }
+             
                   </Row>
                 </form>
               </div>}

@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import proj1Img1 from "../assets/img/teckshop/teck-1.png";
 import proj1Img2 from "../assets/img/teckshop/teck-2.png";
@@ -9,7 +9,6 @@ import proj1Img6 from "../assets/img/teckshop/teck-6.png";
 import proj1Img7 from "../assets/img/teckshop/teck-7.png";
 import proj2 from "../assets/img/proj2.png";
 import proj3 from "../assets/img/proj3.png";
-import proj4 from "../assets/img/proj4.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -115,7 +114,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" alt="aaa" src={colorSharp2}></img>
     </section>
   )
 }

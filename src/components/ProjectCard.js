@@ -19,7 +19,7 @@ export const ProjectCard = ({ title, description, imgUrl, sourceCode, liveApp })
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
-        <img src={image} />
+        <img src={image} alt="aaa" />
         <div className="proj-txtx">
         <a href={liveApp} target="blank" class='link-project'> {title}  </a>
         <br></br>
