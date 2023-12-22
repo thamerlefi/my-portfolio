@@ -27,7 +27,7 @@ export const ProjectCard = ({ title, description, imgUrl, sourceCode, liveApp })
           <span className="proj-spaces">{description}</span>
         <br/><br/>
         <div className="proj-card-links">
-        <a href={sourceCode} target="blank" > {"Source code"}  </a>
+        <a href={sourceCode} target="blank" > {"Code Source"}  </a>
         {liveApp && <a href={liveApp} target="blank" > {"Live App"}  </a>}
         </div>
         </div>
